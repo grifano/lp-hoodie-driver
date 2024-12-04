@@ -1,10 +1,12 @@
 <img src="./public/grifano-logo.svg" alt="grifano logo" height="100"/>
 
-<img src="./public/vite-logo.svg" alt="vite" height="50"/>
-<img src="./public/npm-logo.svg" alt="npm" height="50"/>
-<img src="./public/js-logo.svg" alt="javascript" height="50"/>
-<img src="./public/html-logo.svg" alt="html" height="50"/>
-<img src="./public/css-logo.svg" alt="CSS" height="50"/>
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src="./public/vite-logo.svg" alt="vite" height="50"/>
+  <img src="./public/npm-logo.svg" alt="npm" height="50"/>
+  <img src="./public/js-logo.svg" alt="javascript" height="50"/>
+  <img src="./public/html-logo.svg" alt="html" height="50"/>
+  <img src="./public/css-logo.svg" alt="CSS" height="50"/>
+</div>
 
 # Hi 👋 there!
 
