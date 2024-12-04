@@ -1,0 +1,30 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/*** Base & Reset ***/
+@import url('normalize.css');
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./base.css');
+
+/*** Libraries ***/
+@import '@splidejs/splide/css/core';
+@import url('./splide.css');
+
+/*** Common styles ***/
+@import url('./rating-stars.css');
+
+/*** Sections ***/
+@import url('./header.css');
+@import url('./section-hero.css');
+@import url('./section-services.css');
+@import url('./section-process.css');
+@import url('./section-addons.css');
+@import url('./section-locals.css');
+@import url('./section-features.css');
+@import url('./section-reviews.css');
+@import url('./footer.css');

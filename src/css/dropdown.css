@@ -1,0 +1,35 @@
+.accordion-container {
+  padding: 0 24px;
+}
+.ac {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 48px;
+  svg {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+    fill: #2dcbe0;
+  }
+}
+.ac.is-active {
+  svg {
+    transform: rotate(0);
+  }
+}
+.ac-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.ac-trigger {
+  padding: 0 !important;
+  width: auto !important;
+  font-family: var(--font-family) !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  color: white !important;
+  &::after {
+    display: none;
+  }
+}

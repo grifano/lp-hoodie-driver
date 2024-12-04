@@ -1,0 +1,13 @@
+:root {
+  /* Fonts */
+  --font-family: 'Ubuntu', sans-serif;
+  --second-family: 'Roboto', sans-serif;
+
+  /* Colors: Primitive*/
+  --brand-color: #2dcbe0;
+  --pure-black-color: #0f0f0f;
+
+  /* Colors: Semantic */
+  --action-color: var(--brand-color);
+  --bg-dark-color: var(--pure-black-color);
+}

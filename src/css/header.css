@@ -1,0 +1,107 @@
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  z-index: 9998;
+  background: var(--bg-dark-color);
+}
+.header-top-caption {
+  text-align: center;
+  padding: 10px 0;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+}
+.header-title {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header-burger-icon {
+  .burger-box {
+    padding: 7.5px;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+    .burger-inner {
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: white;
+      &.is-top {
+        width: 50%;
+      }
+      &.is-mid {
+      }
+      &.is-bottom {
+        align-self: flex-end;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.header-nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 9999;
+  color: white;
+  background-color: var(--bg-dark-color);
+  /* Smooth transitions for transform and opacity */
+  transition: transform 300ms ease, opacity 300ms ease, visibility 0ms 300ms; /* Delay visibility hiding */
+
+  /* Hide when is not active */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  .header-nav-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .header-nav-menu-title {
+    max-width: 345px;
+    margin: 36px auto 48px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+  .header-nav-list {
+    padding: 24px 0;
+  }
+  .header-nav-item {
+  }
+  .header-nav-link {
+    width: 100%;
+    display: inline-block;
+    padding: 6px 6px 6px 0;
+    font-size: 24px;
+  }
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+
+    /* Reset visibility delay for open state */
+    transition: transform 300ms ease, opacity 300ms ease, visibility 0ms;
+  }
+}

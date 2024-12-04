@@ -1,0 +1,45 @@
+.features {
+  padding-top: 72px;
+  text-align: center;
+  color: #fff;
+}
+.container {
+  &.is-index-2 {
+    position: relative;
+    z-index: 2;
+  }
+}
+.features-list {
+}
+.features-item {
+  padding: 60px 0;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.features-item-bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.features-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.features-item-text {
+  font-size: 24px;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+.features-item-caption {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
