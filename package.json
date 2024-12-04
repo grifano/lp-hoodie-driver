@@ -1,11 +1,11 @@
 {
-  "name": "Landing Page The Locals Detailing",
+  "name": "Landing Page Hoodie Driver",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/lp-the-locals-detailing/",
+    "build": "vite build --base=/lp-hoodie-driver/",
     "preview": "vite preview"
   },
   "devDependencies": {
