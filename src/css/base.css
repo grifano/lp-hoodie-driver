@@ -3,8 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #fff;
+  background-color: var(--body-bg-color);
   font-family: var(--font-family);
+  color: var(--text-light-color);
 }
 .no-scroll {
   overflow: hidden;
@@ -26,9 +27,9 @@ body {
 
 /*** Section global vertical padding ***/
 .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  scroll-margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  scroll-margin-top: 80px;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -39,48 +40,68 @@ body {
 
 /*** Buttons ***/
 .button {
-  display: inline-block;
-  font-family: var(--second-family);
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
   font-size: 16px;
-  text-transform: uppercase;
-  color: #1e1e1e;
-  background: #2dcbe0;
-  padding: 18px 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--button-text-color);
+  background: var(--button-bg-color);
+  padding: 6px 12px;
+  border: 6px solid var(--button-bg-color);
+  border-radius: 48px;
+  svg {
+    fill: currentColor;
+  }
+  @media screen and (max-width: 768px) {
+    &.is-fixed-mobile {
+      display: block;
+      padding: 8px;
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 991px) {
-  .button:hover,
-  .button:focus-visible {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  .button,
+  .button {
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
   }
 
   /* Hover/focus only for desktop */
   .button:hover,
   .button:focus-visible {
-    transform: translateY(-2px);
-    box-shadow: 2px 2px 24px rgba(45, 203, 224, 0.3);
+    color: var(--blue);
+    background: var(--white);
   }
   .button:active {
-    transform: translateY(0px);
-    box-shadow: none;
+    color: var(--white);
+    background: var(--button-bg-color);
   }
 }
 
 /*** Container ***/
 .container {
-  max-width: 345px;
+  max-width: 327px;
   padding: 0 24px;
   margin: 0 auto;
-  &.is-small {
-    max-width: 301px;
-    padding: 0 46px;
-  }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 696px;
+    padding: 0 36px;
+  }
 }
 @media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1104px;
+    padding: 0 12px;
+  }
 }

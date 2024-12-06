@@ -3,10 +3,26 @@
   --font-family: 'Montserrat', sans-serif;
 
   /* Colors: Primitive*/
-  --brand-color: #2dcbe0;
   --pure-black-color: #0f0f0f;
+  --red: #fa8d74;
+  --green: #5eb12e;
+  --black: #000;
+  --white: #fff;
+  --lightgrey: #f4f4f4;
+  --blue: #2b96ea;
+  --yellow: #e0cc1b;
+  --darkgrey: #ababab;
+  --dark: #1f2224;
 
   /* Colors: Semantic */
-  --action-color: var(--brand-color);
-  --bg-dark-color: var(--pure-black-color);
+  --button-text-color: var(--white);
+  --button-bg-color: var(--blue);
+  --links-color: var(--blue);
+  --text-dark-color: var(--dark);
+  --heading-color: var(--black);
+  --body-bg-color: var(--dark);
+  --text-light-color: var(--white);
+  --social-links-color: var(--yellow);
+  --action-color: var(--blue);
+  --element-bg-color: #202e38;
 }
