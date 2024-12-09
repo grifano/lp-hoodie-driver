@@ -25,6 +25,25 @@ body {
   overflow: hidden;
 }
 
+/*** Container ***/
+.container {
+  max-width: 327px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 696px;
+    padding: 0 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1104px;
+    padding: 0 12px;
+  }
+}
+
 /*** Section global vertical padding ***/
 .section {
   padding-top: 60px;
@@ -89,24 +108,5 @@ body {
   .button:active {
     color: var(--white);
     background: var(--button-bg-color);
-  }
-}
-
-/*** Container ***/
-.container {
-  max-width: 327px;
-  padding: 0 24px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 696px;
-    padding: 0 36px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1104px;
-    padding: 0 12px;
   }
 }
