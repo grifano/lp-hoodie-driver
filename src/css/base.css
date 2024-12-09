@@ -7,7 +7,7 @@ body {
   font-family: var(--font-family);
   color: var(--text-light-color);
 }
-.no-scroll {
+.menu-open {
   overflow: hidden;
 }
 
@@ -55,7 +55,7 @@ body {
   svg {
     fill: currentColor;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 550px) {
     &.is-fixed-mobile {
       display: block;
       padding: 8px;
@@ -66,6 +66,11 @@ body {
       line-height: 0;
     }
   }
+}
+
+/*** Form components styles ***/
+
+@media screen and (min-width: 550px) and (max-width: 991px) {
 }
 @media screen and (min-width: 768px) {
 }

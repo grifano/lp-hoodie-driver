@@ -1,128 +1,108 @@
+<p aria-label="ads-banner" class="header-top-caption">
+  Худі на КПП найкращий подарунок!
+</p>
+
 <header class="header">
-  <p class="header-top-caption">Худі на КПП найкращий подарунок!</p>
   <div class="header-wrap">
-    <a href="/">LOGO</a>
+    <a href="/" class="logo">
+      <picture class="logo-icon">
+        <source type="image/avif" srcset="./image/logo-icon/Icon.avif" />
+        <source type="image/webp" srcset="./image/logo-icon/Icon.webp" />
+        <img
+          width="32"
+          height="32"
+          src="./image/logo-icon/Icon.png"
+          alt="descriptive text"
+        />
+      </picture>
+      <div class="logo-text-wrap">
+        <strong>Hoodie Driver</strong>
+        <p>Перші в Україні</p>
+      </div>
+    </a>
+    <div class="header-menu" data-header-menu>
+      <dir class="header-menu-inner">
+        <nav class="header-nav-menu is-desktop">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">
+                <svg width="20" height="20">
+                  <use href="./public/icons.svg#icon-fire"></use>
+                </svg>
+                Кастом</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Про нас</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Відгуки</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link"
+                >Питання та Відповіді</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-list is-header">
+          <li>
+            <a class="social-link" aria-label="instagram" href="#">
+              <svg width="32" height="32">
+                <use href="./public/icons.svg#icon-instagram_icon"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a class="social-link" aria-label="telegram" href="#">
+              <svg width="32" height="32">
+                <use href="./public/icons.svg#icon-telegram"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a class="social-link" aria-label="tiktok" href="#">
+              <svg width="32" height="32">
+                <use href="./public/icons.svg#icon-tiktok"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a class="social-link" aria-label="viber" href="#">
+              <svg width="32" height="32">
+                <use href="./public/icons.svg#icon-viber"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <!-- Temporary removed -->
+        <!-- <div class="header-menu-caption-text-tablet">
+          <p><strong>Перші дізнаються Ви!</strong></p>
+          <p>
+            Не пропустіть свіжі новини та унікальні акції — підпишіться на наш
+            newsletter зараз.
+          </p>
+        </div> -->
+        <!-- Temporary removed / -->
+        <ul class="lang">
+          <li><button type="button" class="lang-btn is-current">UA</button></li>
+          <li><button type="button" class="lang-btn">RU</button></li>
+        </ul>
+        <div class="header-footer">
+          <a href="#" class="legal-link">Політика приватності</a>
+          <a href="#" class="legal-link">Умова користувача</a>
+          <p class="copyright">© 2024 Hoodie Driver</p>
+        </div>
+      </dir>
+    </div>
     <button type="button" class="button is-fixed-mobile">
       <svg width="24" height="24">
         <use href="./public/icons.svg#icon-meteor"></use>
       </svg>
       Замовити!
     </button>
-    <div
-      class="header-burger-icon"
-      aria-label="Menu"
-      role="button"
-      aria-controls="navigation"
-    >
-      <div class="burger-box" data-menu-open>
-        <div class="burger-inner is-top"></div>
-        <div class="burger-inner is-mid"></div>
-        <div class="burger-inner is-bottom"></div>
-      </div>
-    </div>
-    <nav class="header-nav-menu" data-menu>
-      <div class="header-nav-menu-inner">
-        <a href="/">
-          <picture>
-            <!-- PNG legacy support -->
-            <source
-              type="image/png"
-              srcset="./image/logo-light.png 1x, ./image/logo-light@2x.png 2x"
-            />
-            <!-- WEBP modern support -->
-            <source
-              type="image/webp"
-              srcset="./image/logo-light.webp 1x, ./image/logo-light@2x.webp 2x"
-            />
-            <img
-              width="75"
-              height="75"
-              src="./image/logo-light.png"
-              alt="TL sport car shape"
-            /> </picture
-        ></a>
-        <p class="header-title">The Locals Detailing</p>
-        <div
-          class="header-burger-icon"
-          aria-label="Menu"
-          role="button"
-          aria-controls="navigation"
-        >
-          <div class="burger-box" data-menu-close>
-            <div class="burger-inner is-top"></div>
-            <div class="burger-inner is-mid"></div>
-            <div class="burger-inner is-bottom"></div>
-          </div>
-        </div>
-      </div>
-      <p class="header-nav-menu-title">
-        <span>The Locals Detailing</span> We’re currently serving Bucks &
-        Montgomery counties in PA.
-      </p>
-      <div class="accordion-container">
-        <div class="ac">
-          <h2 class="ac-header">
-            <button type="button" class="ac-trigger">Bucks County</button>
-            <svg width="19" height="10">
-              <use href="./image/icons.svg#icon-chewron"></use>
-            </svg>
-          </h2>
-          <div class="ac-panel">
-            <ul class="header-nav-list">
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link"
-                  >Chestnut Hill
-                </a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">Warrington</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">Eastwick</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">East Falls</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link"
-                  >University City</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="ac">
-          <h2 class="ac-header">
-            <button type="button" class="ac-trigger">Montgomery County</button>
-            <svg width="19" height="10">
-              <use href="./image/icons.svg#icon-chewron"></use>
-            </svg>
-          </h2>
-          <div class="ac-panel">
-            <ul class="header-nav-list">
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link"
-                  >Chestnut Hill
-                </a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">Warrington</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">Eastwick</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link">East Falls</a>
-              </li>
-              <li class="header-nav-item">
-                <a href="./about-me.html" class="header-nav-link"
-                  >University City</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <button class="btn-menu" type="button">
+      <i class="btn-menu__bars" aria-hidden="true"></i>
+      <span class="visually-hidden">Menu</span>
+    </button>
   </div>
 </header>
