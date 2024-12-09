@@ -79,7 +79,7 @@
   .header-menu {
     position: absolute;
     width: 100%;
-    top: 68px;
+    top: 60px;
     left: 0;
     box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.14);
     background: var(--element-bg-color);
@@ -216,6 +216,19 @@
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: auto;
+    .logo-text-wrap {
+      font-size: 12px;
+      strong {
+        font-size: 14px;
+      }
+    }
+    .logo-icon {
+      transform-origin: center;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
   }
   .btn-menu {
     display: none;
