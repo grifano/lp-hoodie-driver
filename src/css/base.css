@@ -83,6 +83,7 @@ body {
       bottom: 24px;
       font-size: 0;
       line-height: 0;
+      z-index: 9999;
     }
   }
 }

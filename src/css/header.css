@@ -63,6 +63,10 @@
 }
 
 .header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 9998;
   padding: 16px;
   .header-wrap {
     position: relative;
@@ -78,7 +82,10 @@
   }
   .header-menu {
     position: absolute;
+    z-index: 9998;
     width: 100%;
+    height: 80svh;
+    overflow: auto;
     top: 60px;
     left: 0;
     box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.14);
@@ -240,6 +247,7 @@
     .header-menu {
       position: static;
       width: auto;
+      height: auto;
       margin-right: 12px;
       .header-menu-inner {
         display: flex;
