@@ -1,12 +1,14 @@
 {
-  "name": "Landing Page Hoodie Driver",
+  "name": "landing-page-hoodie-driver",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/lp-hoodie-driver/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gen-images": "node scripts/gen-images.mjs",
+    "gen-picture-tag": "node scripts/gen-picture-tag.mjs"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -17,9 +19,12 @@
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "accordion-js": "^3.3.4",
+    "chokidar": "^4.0.1",
     "gsap": "^3.12.5",
     "normalize.css": "^8.0.1",
+    "sharp": "^0.33.5",
     "split-type": "^0.3.4",
+    "tinify": "^1.7.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

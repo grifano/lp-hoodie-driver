@@ -1,0 +1,133 @@
+[WATCHER]: Watching folder: ./src/images
+(node:7051) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[WATCHER]: Folder detected: src/images
+[WATCHER]: Skipping folder: src/images
+[WATCHER]: Folder detected: src/images/input_section-hero
+[WATCHER]: Processing folder: src/images/input_section-hero -> src/images/section-hero
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-desktop.png with baseName: hoodie-dark-desktop
+[WATCHER]: Created output directory: src/images/section-hero
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-desktop.png to src/images/section-hero/hoodie-dark-desktop.png
+[WATCHER]: Folder detected: src/images/logo-icon
+[WATCHER]: Skipping folder: src/images/logo-icon
+[WATCHER]: Folder detected: src/images/section-hero
+[WATCHER]: Skipping folder: src/images/section-hero
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-desktop.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-desktop.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-desktop.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-desktop
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-desktop
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-desktop
+[WATCHER]: Warning: No fallback image found for hoodie-dark-desktop.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-desktop
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-desktop@2x.png with baseName: hoodie-dark-desktop@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-desktop@2x.png to src/images/section-hero/hoodie-dark-desktop@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-desktop@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-desktop@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-desktop@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-desktop@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-desktop@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-desktop@2x
+[WATCHER]: Warning: No fallback image found for hoodie-dark-desktop@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-desktop@2x
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-mobile.png with baseName: hoodie-dark-mobile
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-mobile.png to src/images/section-hero/hoodie-dark-mobile.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-mobile.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-mobile.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-mobile.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-mobile
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-mobile
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-mobile
+[WATCHER]: Warning: No fallback image found for hoodie-dark-mobile.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-mobile
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-mobile@2x.png with baseName: hoodie-dark-mobile@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-mobile@2x.png to src/images/section-hero/hoodie-dark-mobile@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-mobile@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-mobile@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-mobile@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-mobile@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-mobile@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-mobile@2x
+[WATCHER]: Warning: No fallback image found for hoodie-dark-mobile@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-mobile@2x
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-tablet.png with baseName: hoodie-dark-tablet
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-tablet.png to src/images/section-hero/hoodie-dark-tablet.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-tablet.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-tablet.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-tablet.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-tablet
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-tablet
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-tablet
+[WATCHER]: Warning: No fallback image found for hoodie-dark-tablet.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-tablet
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-dark-tablet@2x.png with baseName: hoodie-dark-tablet@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-dark-tablet@2x.png to src/images/section-hero/hoodie-dark-tablet@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-dark-tablet@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-dark-tablet@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-dark-tablet@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-dark-tablet@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-dark-tablet@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-dark-tablet@2x
+[WATCHER]: Warning: No fallback image found for hoodie-dark-tablet@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-dark-tablet@2x
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-desktop.png with baseName: hoodie-yellow-desktop
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-desktop.png to src/images/section-hero/hoodie-yellow-desktop.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-desktop.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-desktop.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-desktop.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-desktop
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-desktop
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-desktop
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-desktop.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-desktop
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-desktop@2x.png with baseName: hoodie-yellow-desktop@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-desktop@2x.png to src/images/section-hero/hoodie-yellow-desktop@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-desktop@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-desktop@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-desktop@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-desktop@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-desktop@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-desktop@2x
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-desktop@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-desktop@2x
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-mobile.png with baseName: hoodie-yellow-mobile
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-mobile.png to src/images/section-hero/hoodie-yellow-mobile.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-mobile.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-mobile.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-mobile.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-mobile
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-mobile
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-mobile
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-mobile.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-mobile
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-mobile@2x.png with baseName: hoodie-yellow-mobile@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-mobile@2x.png to src/images/section-hero/hoodie-yellow-mobile@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-mobile@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-mobile@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-mobile@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-mobile@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-mobile@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-mobile@2x
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-mobile@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-mobile@2x
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-tablet.png with baseName: hoodie-yellow-tablet
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-tablet.png to src/images/section-hero/hoodie-yellow-tablet.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-tablet.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-tablet.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-tablet.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-tablet
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-tablet
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-tablet
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-tablet.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-tablet
+[WATCHER]: Processing file: src/images/input_section-hero/hoodie-yellow-tablet@2x.png with baseName: hoodie-yellow-tablet@2x
+[WATCHER]: Compressing file: src/images/input_section-hero/hoodie-yellow-tablet@2x.png to src/images/section-hero/hoodie-yellow-tablet@2x.png
+[WATCHER]: Compressed and saved: src/images/section-hero/hoodie-yellow-tablet@2x.png
+[WATCHER]: Converted to WebP: src/images/section-hero/hoodie-yellow-tablet@2x.webp
+[WATCHER]: Converted to AVIF: src/images/section-hero/hoodie-yellow-tablet@2x.avif
+[WATCHER]: Skipping resolution: desktop for hoodie-yellow-tablet@2x
+[WATCHER]: Skipping resolution: tablet for hoodie-yellow-tablet@2x
+[WATCHER]: Skipping resolution: mobile for hoodie-yellow-tablet@2x
+[WATCHER]: Warning: No fallback image found for hoodie-yellow-tablet@2x.
+[WATCHER]: No snippet generated for baseName: hoodie-yellow-tablet@2x
+[WATCHER]: No snippets generated for folder: section-hero
