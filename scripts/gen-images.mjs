@@ -1,3 +1,36 @@
+/*
+# Image Processor Script - Quick Reference
+
+## Folder Structure
+- **Input Folders:**
+  Place folders prefixed with `input_` inside `./src/images/`.
+  Example:
+  ```
+  ./src/images/
+    input_example-folder/
+      image1.jpg
+      image2.png
+  ```
+
+- **Output Folders:**
+  Automatically created in the same directory without the `input_` prefix.
+  Example:
+  ```
+  ./src/images/
+    example-folder/
+      example-image1.jpg
+      example-image1.webp
+      example-image1.avif
+  ```
+
+## Supported Formats
+- Input files: `.jpg`, `.jpeg`, `.png`
+- Output formats: `.jpg` (compressed), `.webp`, `.avif`
+
+## To run script use npm run gen-images
+
+*/
+
 import tinify from 'tinify';
 import sharp from 'sharp';
 import fs from 'fs';
