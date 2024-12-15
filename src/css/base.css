@@ -6,6 +6,7 @@ body {
   background-color: var(--body-bg-color);
   font-family: var(--font-family);
   color: var(--text-light-color);
+  line-height: 1.5;
 }
 .menu-open {
   overflow: hidden;
@@ -37,7 +38,7 @@ body {
     padding: 0 36px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 991px) {
   .container {
     max-width: 1104px;
     padding: 0 12px;
@@ -45,13 +46,13 @@ body {
 }
 
 /*** Section global vertical padding ***/
-.section {
+section {
   padding-top: 60px;
   padding-bottom: 60px;
   scroll-margin-top: 80px;
 }
 @media screen and (min-width: 768px) {
-  .section {
+  section {
     padding-top: 75px;
     padding-bottom: 75px;
   }
@@ -85,6 +86,17 @@ body {
       line-height: 0;
       z-index: 9999;
     }
+  }
+}
+
+/*** Headlines ***/
+.section-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
   }
 }
 
