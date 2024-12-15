@@ -21,6 +21,7 @@
 /*** Sections ***/
 @import url('./header.css');
 @import url('./section-hero.css');
+@import url('./section-gallery.css');
 @import url('./section-custom.css');
 @import url('./section-features.css');
 @import url('./section-reviews.css');

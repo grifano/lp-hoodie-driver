@@ -1,0 +1,17 @@
+.splide.gallery-slider.is-top {
+  margin-bottom: 16px;
+}
+.gallery-slide {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.gallery-slide-image {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 991px) {
+}

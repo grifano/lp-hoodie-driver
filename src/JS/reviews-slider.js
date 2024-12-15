@@ -10,6 +10,7 @@ const reviewsSlider = new Splide('.reviews-slider', {
   perPage: 4,
   autoScroll: {
     speed: 1,
+    pauseOnHover: false,
   },
   // mediaQuery: 'min',
   breakpoints: {
@@ -17,12 +18,14 @@ const reviewsSlider = new Splide('.reviews-slider', {
       perPage: 2,
       autoScroll: {
         speed: 0.5,
+        pauseOnHover: false,
       },
     },
     768: {
       perPage: 3,
       autoScroll: {
         speed: 0.8,
+        pauseOnHover: false,
       },
     },
   },
