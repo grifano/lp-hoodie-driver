@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build --base=/lp-hoodie-driver/",
     "preview": "vite preview",
-    "gen-images": "node scripts/gen-images.mjs",
-    "gen-picture-tag": "node scripts/gen-picture-tag.mjs"
+    "gen-images": "node scripts/gen-images.js",
+    "gen-picture-tag": "node scripts/gen-picture-tag.js",
+    "gen-svg-sprite": "node scripts/gen-svg-sprite.js"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -21,6 +22,7 @@
     "accordion-js": "^3.3.4",
     "chokidar": "^4.0.1",
     "gsap": "^3.12.5",
+    "jsdom": "^25.0.1",
     "normalize.css": "^8.0.1",
     "sharp": "^0.33.5",
     "split-type": "^0.3.4",
