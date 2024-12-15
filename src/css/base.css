@@ -99,6 +99,9 @@ section {
     font-size: 40px;
   }
 }
+.section-subheading {
+  font-size: 18px;
+}
 
 /*** Form components styles ***/
 
