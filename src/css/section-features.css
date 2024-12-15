@@ -1,0 +1,40 @@
+.features {
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.features-list-item {
+  svg {
+    fill: var(--yellow);
+    margin-bottom: 16px;
+  }
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    max-width: 456px;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (min-width: 991px) {
+  .features {
+    .section-heading {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .features-list {
+    flex-direction: row;
+    max-width: none;
+  }
+}
