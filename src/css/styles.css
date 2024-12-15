@@ -13,6 +13,7 @@
 
 /*** Libraries ***/
 @import '@splidejs/splide/css/core';
+@import '@splidejs/splide/css/skyblue';
 @import url('./splide.css');
 
 /*** Common styles ***/
@@ -22,4 +23,5 @@
 @import url('./section-hero.css');
 @import url('./section-custom.css');
 @import url('./section-features.css');
+@import url('./section-reviews.css');
 @import url('./footer.css');
