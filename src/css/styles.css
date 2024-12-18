@@ -17,6 +17,7 @@
 @import url('./splide.css');
 
 /*** Common styles ***/
+@import url('./newsletter-modal.css');
 
 /*** Sections ***/
 @import url('./header.css');

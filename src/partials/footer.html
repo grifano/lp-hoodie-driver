@@ -1,3 +1,154 @@
 <footer class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <ul class="footer-grid">
+      <li class="footer-grid-item">
+        <a href="/" class="logo is-footer">
+          <picture class="logo-icon">
+            <source type="image/avif" srcset="./images/logo-icon/Icon.avif" />
+            <source type="image/webp" srcset="./images/logo-icon/Icon.webp" />
+            <img
+              width="93"
+              height="93"
+              src="./images/logo-icon/Icon.png"
+              alt="descriptive text"
+            />
+          </picture>
+          <div class="logo-text-wrap">
+            <strong>Hoodie Driver</strong>
+            <p>Перші в Україні</p>
+          </div>
+        </a>
+      </li>
+      <li class="footer-grid-item">
+        <ul class="social-list is-footer">
+          <li>
+            <a class="social-link" aria-label="instagram" href="#">
+              <svg width="48" height="48">
+                <use href="./public/icons.svg#icon-instagram_icon"></use></svg
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="social-link" aria-label="telegram" href="#">
+              <svg width="48" height="48">
+                <use href="./public/icons.svg#icon-telegram"></use></svg
+              >Telegram</a
+            >
+          </li>
+          <li>
+            <a class="social-link" aria-label="tiktok" href="#">
+              <svg width="48" height="48">
+                <use href="./public/icons.svg#icon-tiktok"></use></svg
+              >TikTok</a
+            >
+          </li>
+          <li>
+            <a class="social-link" aria-label="viber" href="#">
+              <svg width="48" height="48">
+                <use href="./public/icons.svg#icon-viber"></use></svg
+              >Viber</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="footer-grid-item">
+        <div aria-labelledby="footer-subscribe-heading">
+          <h2 class="form-heading" id="footer-subscribe-heading">
+            Перші дізнаються Ви!
+          </h2>
+          <p class="form-subtitle">
+            Не пропустіть свіжі новини та унікальні акції — підпишіться на наш
+            newsletter зараз.
+          </p>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <fieldset class="newsletter-field">
+              <div class="newsletter-field-top">
+                <label class="newsletter-label" for="email"
+                  >Email address</label
+                >
+                <span aria-live="polite" class="newsletter-error-msg"
+                  >Перевірте email
+                </span>
+              </div>
+              <input
+                class="newsletter-input"
+                type="email"
+                name="email"
+                id="newsletter-email"
+                placeholder="Ваш email"
+              />
+            </fieldset>
+            <button class="button" type="submit">Підписатися</button>
+            <label class="newsletter-checkbox">
+              <input
+                type="checkbox"
+                name="privacy-policy"
+                id="privacy-policy"
+              />
+              <span class="checkbox-box"></span>
+              Я погоджуюся з
+              <a href="/privacy-policy" target="_blank" rel="noopener"
+                >Політикою приватності</a
+              >
+            </label>
+          </form>
+        </div>
+      </li>
+      <li class="footer-grid-item">
+        <div class="footer-menu">
+          <div class="footer-menu-block">
+            <p class="footer-menu-heading">Наш каталог</p>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-list-item">
+                <a href="#custom" class="footer-menu-link">Усі</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/delivery" class="footer-menu-link">Ароматизатори</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/about-us" class="footer-menu-link">Брелоки</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/contact" class="footer-menu-link">Підвіски</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/contact" class="footer-menu-link">Набори</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/contact" class="footer-menu-link">Худі</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-block">
+            <p class="footer-menu-heading">Інформація</p>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-list-item">
+                <a href="#custom" class="footer-menu-link">Кастом</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/delivery" class="footer-menu-link">Доставка</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/about-us" class="footer-menu-link">Про нас</a>
+              </li>
+              <li class="footer-menu-list-item">
+                <a href="/contact" class="footer-menu-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="footer-grid-item">
+        <ul class="footer-copyright-list">
+          <li class="footer-copyright-item">© 2024 Hoodie Driver</li>
+          <li class="footer-copyright-item">
+            <a href="" class="footer-legal-link">Політика приватності</a>
+          </li>
+          <li class="footer-copyright-item">
+            <a href="" class="footer-legal-link">Умова користувача</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </footer>
