@@ -1,7 +1,7 @@
 const newsletterForm = document.querySelector('#newsletter-form');
 const input = document.querySelector('input');
-const modalMsg = document.querySelector('.modal-msg');
-const modalButton = document.querySelector('.modal-msg button');
+const modalMsg = document.querySelector('.modal.is-newsletter');
+const modalButton = document.querySelector('.modal button');
 const errorMsg = document.querySelector('.newsletter-error-msg');
 const body = document.body;
 
@@ -13,7 +13,7 @@ clearStates();
 
 // Dismiss modal msg
 modalButton.addEventListener('click', e => {
-  modalMsg.classList.remove('isActive');
+  modalMsg.classList.remove('is-active');
   clearStates();
 });
 
@@ -40,7 +40,7 @@ function getValidateEmail(email) {
 }
 function getValidation(value) {
   if (value) {
-    modalMsg.classList.add('isActive');
+    modalMsg.classList.add('is-active');
     body.classList.add('is-locked');
     input.value = '';
   } else {
@@ -52,6 +52,6 @@ function clearStates() {
   // Clear previous states
   errorMsg.classList.remove('is-error');
   input.classList.remove('is-invalid');
-  modalMsg.classList.remove('isActive');
+  modalMsg.classList.remove('is-active');
   body.classList.remove('is-locked');
 }

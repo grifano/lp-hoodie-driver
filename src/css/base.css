@@ -11,9 +11,6 @@ body {
     overflow: hidden;
   }
 }
-.menu-open {
-  overflow: hidden;
-}
 
 /*** Visually hide element, but keep visible for search engine ***/
 .visually-hidden {

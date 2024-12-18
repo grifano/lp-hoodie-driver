@@ -5,7 +5,7 @@
   |============================
 */
 /*** Base & Reset ***/
-@import url('normalize.css');
+@import 'modern-normalize/modern-normalize.css';
 @import url('./reset.css');
 @import url('./fonts.css');
 @import url('./variables.css');
@@ -17,7 +17,7 @@
 @import url('./splide.css');
 
 /*** Common styles ***/
-@import url('./newsletter-modal.css');
+@import url('./modal.css');
 
 /*** Sections ***/
 @import url('./header.css');
