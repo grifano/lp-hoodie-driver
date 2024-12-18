@@ -28,9 +28,13 @@ body {
 
 /*** Container ***/
 .container {
-  max-width: 327px;
   padding: 0 16px;
   margin: 0 auto;
+}
+@media screen and (min-width: 475px) {
+  .container {
+    max-width: 443px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -112,16 +116,10 @@ footer {
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
+  color: var(--text-light-color);
   .logo-text-wrap {
     line-height: 1.5;
     font-size: 8px;
-    color: var(--text-light-color);
-    &.is-footer {
-      font-size: 12px;
-      strong {
-        font-size: 16px;
-      }
-    }
     strong {
       font-size: 10px;
       font-weight: 500;
@@ -138,6 +136,10 @@ footer {
         font-size: 16px;
       }
     }
+    :is(img) {
+      width: 64px !important;
+      height: 64px !important;
+    }
   }
 }
 .social-list {
@@ -148,7 +150,7 @@ footer {
     display: inline-block;
     padding: 4px;
   }
-  svg {
+  :is(svg) {
     fill: var(--blue);
   }
   &.is-footer {
@@ -166,6 +168,23 @@ footer {
       flex-direction: column;
       padding: 12px;
       font-weight: 700;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &.is-footer {
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    &.is-footer {
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+      .social-link:first-child {
+        padding: 12px 12px 12px 0;
+      }
     }
   }
 }
@@ -192,6 +211,7 @@ footer {
   }
   .newsletter-field-top {
     flex-grow: 1;
+    text-align: center;
   }
   .newsletter-label {
     position: absolute;
@@ -284,6 +304,28 @@ footer {
     input:focus + .checkbox-box {
       outline: 1px solid var(--action-color);
       outline-offset: 1px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    min-height: 116px;
+    .newsletter-field {
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+    :is(.button) {
+      position: absolute;
+      width: auto;
+      top: 32px;
+      right: 0;
+    }
+    .newsletter-checkbox {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      justify-content: center;
     }
   }
 }
