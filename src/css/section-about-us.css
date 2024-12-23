@@ -1,0 +1,33 @@
+.about-us {
+}
+.about-us-grid {
+  box-shadow: 0 8px 64px 0 rgba(224, 204, 27, 0.12),
+    0 4px 16px 0 rgba(224, 204, 27, 0.08);
+  background: var(--body-bg-color);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.about-us-grid-item {
+  :is(img) {
+    width: 100%;
+  }
+}
+.about-us-content {
+  padding: 24px;
+  :is(.section-subheading) {
+    margin-bottom: 24px;
+  }
+}
+.section-heading {
+}
+
+.about-us-photo {
+}
+
+@media screen and (min-width: 991px) {
+  .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
