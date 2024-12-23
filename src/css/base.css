@@ -151,7 +151,7 @@ footer {
     padding: 4px;
   }
   :is(svg) {
-    fill: var(--blue);
+    fill: currentColor;
   }
   &.is-footer {
     max-width: 216px;
@@ -182,6 +182,13 @@ footer {
       max-width: none;
       display: flex;
       justify-content: space-between;
+      .social-link {
+        transition: color 0.3s ease;
+        &:focus-visible,
+        &:hover {
+          color: var(--action-color);
+        }
+      }
       .social-link:first-child {
         padding: 12px 12px 12px 0;
       }

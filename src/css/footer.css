@@ -130,7 +130,13 @@
       grid-row: 2;
     }
     .footer-copyright-list {
-      justify-content: space-evenly;
+      gap: 16px;
+      justify-content: space-between;
+    }
+    .footer-copyright-item {
+      &:first-child {
+        margin-right: auto;
+      }
     }
   }
   .form-heading,
@@ -142,5 +148,22 @@
   }
   .footer-menu {
     justify-content: start;
+  }
+  .footer-menu-link {
+    transition: color 0.3s ease;
+  }
+  .footer-menu-link {
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      color: var(--action-color);
+    }
+  }
+  .footer-legal-link {
+    transition: color 0.3s ease;
+    &:focus-visible,
+    &:hover {
+      color: var(--action-color);
+    }
   }
 }
