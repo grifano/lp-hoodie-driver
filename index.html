@@ -34,7 +34,7 @@
     <script type="module" crossorigin src="/lp-hoodie-driver/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/lp-hoodie-driver/assets/vendor-5fa2d8fc.js">
     <link rel="stylesheet" href="/lp-hoodie-driver/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/lp-hoodie-driver/assets/index-51cf4642.css">
+    <link rel="stylesheet" href="/lp-hoodie-driver/assets/index-e1b3dd3f.css">
   </head>
   <body>
     <p aria-label="ads-banner" class="header-top-caption">
@@ -1074,7 +1074,12 @@
             Не пропустіть свіжі новини та унікальні акції — підпишіться на наш
             newsletter зараз.
           </p>
-          <form id="newsletter-form" class="newsletter-form" novalidate>
+          <form
+            action="https://formtester.goodbytes.be/post.php"
+            id="newsletter-form"
+            class="newsletter-form"
+            novalidate
+          >
             <fieldset class="newsletter-field">
               <div class="newsletter-field-top">
                 <label class="newsletter-label" for="email"
@@ -1090,6 +1095,7 @@
                 name="email"
                 id="newsletter-email"
                 placeholder="Ваш email"
+                required
               />
             </fieldset>
             <button class="button" type="submit">Підписатися</button>
