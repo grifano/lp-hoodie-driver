@@ -1,12 +1,14 @@
 const newsletterForm = document.querySelector('#newsletter-form');
-const input = document.querySelector('input');
+const emailInput = document.querySelector('input');
+const privacyBox = document.querySelector('#privacy-policy');
+const submitBtn = document.querySelector('#newsletter-form .button');
 const modalMsg = document.querySelector('.modal.is-newsletter');
 const modalButton = document.querySelector('.modal button');
 const errorMsg = document.querySelector('.newsletter-error-msg');
 const body = document.body;
 
 newsletterForm.addEventListener('submit', handleSubmit);
-input.addEventListener('change', handleChange);
+emailInput.addEventListener('change', handleChange);
 
 // Clear all states
 clearStates();
@@ -21,8 +23,18 @@ modalButton.addEventListener('click', e => {
 function handleSubmit(e) {
   e.preventDefault();
 
-  const isValid = getValidateEmail(input.value);
-  getValidation(isValid);
+  const isChecked = privacyBox.checked;
+  const isValid = getValidateEmail(emailInput.value);
+  const isAllValid = getValidation(isValid, isChecked);
+
+  if (isAllValid) {
+    const formData = {
+      email: emailInput.value,
+      privacyPolicy: isChecked,
+    };
+
+    sendDataToServer(formData);
+  }
 }
 function handleChange(e) {
   const isValid = getValidateEmail(e.target.value);
@@ -30,7 +42,7 @@ function handleChange(e) {
     clearStates();
   } else {
     errorMsg.classList.add('is-error');
-    input.classList.add('is-invalid');
+    emailInput.classList.add('is-invalid');
   }
 }
 function getValidateEmail(email) {
@@ -38,20 +50,63 @@ function getValidateEmail(email) {
 
   return emailPattern.test(email);
 }
-function getValidation(value) {
-  if (value) {
-    modalMsg.classList.add('is-active');
-    body.classList.add('is-locked');
-    input.value = '';
+function getValidation(email, checkbox) {
+  if (email) {
+    emailInput.classList.add('is-valid');
+    submitBtn.classList.add('is-green');
+    if (checkbox) {
+      modalMsg.classList.add('is-active');
+      body.classList.add('is-locked');
+    } else {
+      errorMsg.textContent = 'Будь-ласка підвердіть політику приватності';
+      errorMsg.classList.add('is-error');
+      privacyBox.classList.add('is-invalid');
+    }
   } else {
+    errorMsg.textContent = 'Перевірте Ваш email';
     errorMsg.classList.add('is-error');
-    input.classList.add('is-invalid');
+    emailInput.classList.add('is-invalid');
   }
+
+  if (email && checkbox) {
+    return true;
+  }
+
+  return false;
 }
 function clearStates() {
   // Clear previous states
   errorMsg.classList.remove('is-error');
-  input.classList.remove('is-invalid');
+  emailInput.classList.remove('is-invalid');
+  emailInput.classList.remove('is-valid');
   modalMsg.classList.remove('is-active');
+  submitBtn.classList.remove('is-green');
   body.classList.remove('is-locked');
+}
+function formReset() {
+  newsletterForm.reset();
+  privacyBox.classList.remove('is-invalid');
+}
+function sendDataToServer(data) {
+  const somePromise = fetch(
+    'https://676a8efa863eaa5ac0ded677.mockapi.io/signup/newsletter',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }
+  );
+
+  somePromise
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+      formReset();
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }

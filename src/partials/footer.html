@@ -60,7 +60,12 @@
             Не пропустіть свіжі новини та унікальні акції — підпишіться на наш
             newsletter зараз.
           </p>
-          <form id="newsletter-form" class="newsletter-form" novalidate>
+          <form
+            action="https://formtester.goodbytes.be/post.php"
+            id="newsletter-form"
+            class="newsletter-form"
+            novalidate
+          >
             <fieldset class="newsletter-field">
               <div class="newsletter-field-top">
                 <label class="newsletter-label" for="email"
@@ -76,6 +81,7 @@
                 name="email"
                 id="newsletter-email"
                 placeholder="Ваш email"
+                required
               />
             </fieldset>
             <button class="button" type="submit">Підписатися</button>

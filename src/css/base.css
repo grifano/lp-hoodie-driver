@@ -263,6 +263,10 @@ footer {
       border-color: var(--red);
       background: #393755;
     }
+    &.is-valid {
+      box-shadow: 0 0 0 2px var(--green);
+      border-color: var(--green);
+    }
   }
   .newsletter-checkbox {
     display: inline-flex;
@@ -311,6 +315,19 @@ footer {
     input:focus + .checkbox-box {
       outline: 1px solid var(--action-color);
       outline-offset: 1px;
+    }
+    &:has(.is-invalid) {
+      color: var(--red);
+      .checkbox-box {
+        border-color: var(--red);
+        background: rgba(250, 141, 116, 0.2);
+      }
+    }
+  }
+  .button {
+    &.is-green {
+      background-color: var(--green);
+      border-color: var(--green);
     }
   }
   @media screen and (min-width: 768px) {
